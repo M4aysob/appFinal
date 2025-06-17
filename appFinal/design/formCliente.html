@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="css/formCliente.css">
+</head>
+<body>
+    <div class="box">
+        <form action="box">
+            <fieldset>
+                <legend class="nameCadastro"><b>Cadastro de Pessoa</b></legend>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser"  required>
+                    <label for="nome" class="lab-input"> Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="nome" class="lab-input"> Telefone Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser"  required>
+                    <label for="nome" class="lab-input"> Email </label>
+                </div>
+                <br><br>
+                <p>Sexo:</p>
+                <input type="radio" name="feminino" id="fem" value="feminino"  required>
+                <label id="feminino"> Feminino </label>
+                <input type="radio" name="masculino" id="masc" value="masculino" required>
+                <label id="masculino"> Masculino </label>
+                <input type="radio" name="outro" id="outro" value="outro" required>
+                <label id="outro"> Outro </label>
+                <br><br><br>
+                <div class="inputBox">
+                    <label for="datadenas" class="lab-input"> <b>Data de Nascimento</b></label>
+                    <input type="date" name="datadenas" id="datadenas" class="inputUser" required>
+                </div>
+                <br>
+                <!-- <div class="inputBox">
+                    <label for="cep"> <b>CEP</b></label>
+                    <input type="text" name="cep" id="cep" class="cepCliente" required>
+                </div> -->
+                <div class="f">  
+                        <div class="row">
+                            <div class="form-group">
+                                <h3><i class="cep-Cliente"></i> Endereço</h3>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" id="cep" name="cep" class="inputUser" maxlength="9" required>
+                                <label for="cep" class="lab-input"> CEP</label>
+                             </div>    
+                            <div class="col">
+                                <br>
+                                <button type="button" class="cep-btn" id="buscarCep">
+                                    <i class="lab-input"></i> Buscar Endereço
+                                </button>
+                             </div>
+                    </div>
+                    
+                    <br><br>
+                 <div class="row">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" id="logradouro" class="inputUser" name="logradouro"  required>
+                                <label for="logradouro" class="required"><i class="lab-input"></i> Logradouro</label>
+                                
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputBox">
+                                 <input type="text" id="bairro" name="bairro" class="inputUser"  required>
+                                <label for="bairro" class="required"><i class="lab-input"></i> Bairro</label>
+                               
+                            </div>
+                            <br><br>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" id="cidade" name="cidade" class="inputUser"  required>
+                                <label for="cidade" class="required"><i class="lab-input"></i> Cidade</label>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="estado" class="inputUser"><i class="estadoCliente"></i> Estado</label>
+                            <select id="estado" name="estado" required>
+                                <option value="">Selecione um estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                    </div>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="email" id="email" class="inputUser"  required>
+                    <label for="nome" class="lab-input"> Senha </label>
+                </div>
+                <br><br>
+                <button class="button-cliente"> Cadastrar-se </button>
+            
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

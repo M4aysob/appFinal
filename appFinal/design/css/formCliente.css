@@ -1,0 +1,56 @@
+body{
+    font-family: arial;
+    background-color: white;
+    color: white;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;             
+    min-height: 100vh;        
+    box-sizing: border-box;
+    
+}
+form {
+    width: 100%;
+    max-width: 600px; /* ou outro valor */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #4b0076;
+    
+}
+legend{
+    color: #4b0076;
+    border: solid yellow;
+    padding: 10px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 7px;
+}
+fieldset{
+    border: solid yellow;
+}
+.inputUser{
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px yellow;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.lab-input{
+position: absolute;
+top: 0px;
+left: 0px;
+pointer-events: none;
+transition: .5px;
+}
+.input-User:focus ~.LabelInput{
+top: -20px;
+font-size: 12px;
+}
